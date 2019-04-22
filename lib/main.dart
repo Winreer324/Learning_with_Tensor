@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:learning_with_tensor/lessons/lesson_eight.dart';
+import 'package:learning_with_tensor/lessons/lesson_eighteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_eleven.dart';
+import 'package:learning_with_tensor/lessons/lesson_fifteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_five.dart';
 import 'package:learning_with_tensor/lessons/lesson_four.dart';
+import 'package:learning_with_tensor/lessons/lesson_fourteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_nine.dart';
+import 'package:learning_with_tensor/lessons/lesson_nineteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_one.dart';
 import 'package:learning_with_tensor/lessons/lesson_seven.dart';
+import 'package:learning_with_tensor/lessons/lesson_seventeen.dart';
 import 'package:learning_with_tensor/lessons/lesson_six.dart';
+import 'package:learning_with_tensor/lessons/lesson_sixteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_ten.dart';
+import 'package:learning_with_tensor/lessons/lesson_thirteen.dart';
 import 'package:learning_with_tensor/lessons/lesson_three.dart';
 import 'package:learning_with_tensor/lessons/lesson_twelve.dart';
+import 'package:learning_with_tensor/lessons/lesson_twenty.dart';
 import 'package:learning_with_tensor/lessons/lesson_two.dart';
 import 'package:learning_with_tensor/route.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
@@ -55,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
       title: 'With love for Tensor',
       home: RouteLessons(),
+      debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder> {
         '/webview' : (context) =>  WebviewScaffold(
           url: pushUrl,
@@ -77,6 +86,16 @@ class _MyHomePageState extends State<MyHomePage> {
         '/lessonten' : (context) =>  LessonTen(),
         '/lessoneleven' : (context) =>  LessonEleven(),
         '/lessontwelve' : (context) =>  LessonTwelve(),
+        '/lessonthirteen' : (context) =>  LessonThirteen(),
+        '/lessonfourteen' : (context) =>  LessonFourteen(),
+        '/lessonfifteen' : (context) =>  LessonFifteen(),
+        '/lessonsixteen' : (context) =>  LessonSixteen(),
+        '/lessonseventeen' : (context) =>  LessonSeventeen(),
+        '/lessoneighteen' : (context) =>  LessonEighteen(),
+        '/lessonnineteen' : (context) =>  LessonNineTeen(),
+        '/lessontwenty' : (context) =>  LessonTwenty(),
+
+
       },
     );
   }
